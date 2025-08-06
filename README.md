@@ -53,4 +53,4 @@ $ ./cargo build
 ```
 
 > [!NOTE]
-> Note that this builds a debug version that is **not suitable for running a testnet or mainnet validator**.
+> Note that this builds a debug version.

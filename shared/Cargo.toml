@@ -1,0 +1,23 @@
+[package]
+name = "concilium-shared"
+description = "concilium Shared"
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+ahash.workspace = true
+bincode.workspace = true
+serde.workspace = true
+rand.workspace = true
+rand_chacha.workspace = true
+sha2.workspace = true
+chrono.workspace = true
+concilium-error.workspace = true
+
+[lib]
+crate-type = ["lib"]
+name = "concilium_shared"

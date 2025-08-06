@@ -1,0 +1,38 @@
+[package]
+name = "concilium-rpc"
+description = "concilium RPC"
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio.workspace = true
+tonic.workspace = true
+prost.workspace = true
+rand.workspace = true
+tokio-stream.workspace = true
+async-stream.workspace = true
+bincode.workspace = true
+hex.workspace = true
+ahash.workspace = true
+chrono.workspace = true
+serde.workspace = true
+blst.workspace = true
+rayon.workspace = true
+rocksdb.workspace = true
+ed25519-dalek.workspace = true
+concilium-log.workspace = true
+concilium-error.workspace = true
+concilium-shared.workspace = true
+concilium-proto-defs.workspace = true
+concilium-core.workspace = true
+concilium-core-ext.workspace = true
+concilium-transaction.workspace = true
+
+
+[lib]
+crate-type = ["lib"]
+name = "concilium_rpc"

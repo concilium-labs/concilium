@@ -1,0 +1,24 @@
+[package]
+name = "concilium-genesis"
+description = "concilium Genesis"
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+hex.workspace = true
+ahash.workspace = true
+concilium-core.workspace = true
+concilium-core-ext.workspace = true
+concilium-shared.workspace = true
+concilium-transaction.workspace = true
+
+[lib]
+crate-type = ["lib"]
+name = "concilium_genesis"

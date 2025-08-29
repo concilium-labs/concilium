@@ -1,19 +1,5 @@
 [workspace]
-members = [
-    "test-bin", 
-    "transaction", 
-    "log", 
-    "rpc", 
-    "apps", 
-    "error", 
-    "shared", 
-    "core", 
-    "proto-defs", 
-    "genesis", 
-    "jrpc", 
-    "core-ext", 
-    "cli"
-]
+members = []
 
 resolver = "2"
 
@@ -26,42 +12,3 @@ license = "Apache-2.0"
 edition = "2021"
 
 [workspace.dependencies]
-tokio = { version = "1.44.0", features = ["full"] }
-tonic = "0.12.3"
-prost = "0.13"
-tokio-stream = "0.1.17"
-async-stream = "0.3.6"
-futures-util = "0.3.31"
-ed25519-dalek = { version = "2", features = ["rand_core"] }
-blst = "0.3.14"
-rand = "0.9.0"
-rand_chacha = "0.9.0"
-sha2 = "0.10.9"
-rayon = "1.10.0"
-bincode = { version = "2.0.1", features = ["serde"] }
-serde = { version = "1.0.218", features = ["derive"] }
-serde_json = "1.0.140"
-hex = "0.4.3"
-chrono = "0.4.40"
-rocksdb = { version = "0.23.0", default-features = false, features = ["lz4"] }
-dotenvy = "0.15.7"
-ahash = { version = "0.8.11", features = ["serde"] }
-jsonrpsee = { version = "0.25.1", features = ["server"] }
-serde-big-array = "0.5.1"
-clap = { version = "4.5.39", features = ["derive"]}
-tower-http = { version = "0.6.6", features = ["cors"] }
-tower = "0.5.2"
-hyper = "1.6.0"
-rust_decimal = { version = "1.37.1", features = ["macros"] }
-left-right = "0.11.5"
-concilium-transaction = { path = "transaction" }
-concilium-log = { path = "log" }
-concilium-rpc = { path = "rpc" }
-concilium-error = { path = "error" }
-concilium-shared = { path = "shared" }
-concilium-core = { path = "core" }
-concilium-proto-defs = { path = "proto-defs" }
-concilium-genesis = { path = "genesis" }
-concilium-jrpc = { path = "jrpc" }
-concilium-core-ext = { path = "core-ext" }
-concilium-cli = { path = "cli" }

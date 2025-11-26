@@ -226,7 +226,7 @@ pub async fn handler(params: Params<'_>, mempool: Arc<Mempool>, db: Arc<DB>) -> 
     );
 }
 
-fn error_response(code: i32, message: &str) -> ErrorObject {
+fn error_response(code: i32, message: &str) -> ErrorObject<'_> {
     ErrorObject::owned(
         code,
         message,

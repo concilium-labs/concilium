@@ -1,6 +1,5 @@
 [workspace]
 members = [
-    "test-bin", 
     "transaction", 
     "log", 
     "rpc", 
@@ -43,10 +42,10 @@ serde = { version = "1.0.218", features = ["derive"] }
 serde_json = "1.0.140"
 hex = "0.4.3"
 chrono = "0.4.40"
-rocksdb = { version = "0.23.0", default-features = false, features = ["lz4"] }
+rocksdb = { version = "0.23.0", default-features = false }
 dotenvy = "0.15.7"
 ahash = { version = "0.8.11", features = ["serde"] }
-jsonrpsee = { version = "0.25.1", features = ["server"] }
+jsonrpsee = { version = "0.25.1", features = ["server", "client"] }
 serde-big-array = "0.5.1"
 clap = { version = "4.5.39", features = ["derive"]}
 tower-http = { version = "0.6.6", features = ["cors"] }
